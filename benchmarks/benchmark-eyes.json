@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "0.1",
+  "purpose": "Starter benchmark eye set. Fill expected outputs from authorized reference calculators before clinical validation.",
+  "cases": [
+    {
+      "id": "AVG-001",
+      "description": "Average eye, regular cornea",
+      "input": { "eye": "OD", "mode": "standard", "axialLength": 23.55, "k1": 43.25, "k1Axis": 10, "k2": 44.10, "k2Axis": 100, "anteriorChamberDepth": 3.10, "lensThickness": 4.40, "whiteToWhite": 11.80, "centralCornealThickness": 540, "targetRefraction": -0.25, "aConstant": 119.2, "posteriorCorneaMode": "nomogram" },
+      "expected": {}
+    },
+    {
+      "id": "SHORT-001",
+      "description": "Short eye",
+      "input": { "eye": "OS", "mode": "standard", "axialLength": 21.25, "k1": 44.20, "k1Axis": 75, "k2": 45.00, "k2Axis": 165, "anteriorChamberDepth": 2.55, "lensThickness": 4.90, "whiteToWhite": 11.40, "centralCornealThickness": 555, "targetRefraction": -0.25, "aConstant": 119.2, "posteriorCorneaMode": "nomogram" },
+      "expected": {}
+    },
+    {
+      "id": "VERY-SHORT-001",
+      "description": "Very short eye / high IOL power risk",
+      "input": { "eye": "OD", "mode": "standard", "axialLength": 19.85, "k1": 45.30, "k1Axis": 88, "k2": 46.10, "k2Axis": 178, "anteriorChamberDepth": 2.25, "lensThickness": 5.20, "whiteToWhite": 10.95, "centralCornealThickness": 565, "targetRefraction": -0.50, "aConstant": 119.2, "posteriorCorneaMode": "nomogram" },
+      "expected": {}
+    },
+    {
+      "id": "LONG-001",
+      "description": "Long eye",
+      "input": { "eye": "OS", "mode": "standard", "axialLength": 27.80, "k1": 42.00, "k1Axis": 20, "k2": 42.80, "k2Axis": 110, "anteriorChamberDepth": 3.75, "lensThickness": 4.05, "whiteToWhite": 12.20, "centralCornealThickness": 525, "targetRefraction": -0.50, "aConstant": 119.2, "posteriorCorneaMode": "nomogram" },
+      "expected": {}
+    },
+    {
+      "id": "VERY-LONG-001",
+      "description": "Very long eye",
+      "input": { "eye": "OD", "mode": "standard", "axialLength": 31.20, "k1": 41.10, "k1Axis": 5, "k2": 41.70, "k2Axis": 95, "anteriorChamberDepth": 4.10, "lensThickness": 3.90, "whiteToWhite": 12.55, "centralCornealThickness": 515, "targetRefraction": -1.00, "aConstant": 119.2, "posteriorCorneaMode": "nomogram" },
+      "expected": {}
+    },
+    {
+      "id": "FLAT-K-001",
+      "description": "Flat cornea",
+      "input": { "eye": "OD", "mode": "standard", "axialLength": 24.40, "k1": 38.90, "k1Axis": 2, "k2": 39.55, "k2Axis": 92, "anteriorChamberDepth": 3.45, "lensThickness": 4.20, "whiteToWhite": 12.10, "centralCornealThickness": 530, "targetRefraction": -0.25, "aConstant": 119.2, "posteriorCorneaMode": "nomogram" },
+      "expected": {}
+    },
+    {
+      "id": "STEEP-K-001",
+      "description": "Steep cornea",
+      "input": { "eye": "OS", "mode": "standard", "axialLength": 22.75, "k1": 47.40, "k1Axis": 45, "k2": 48.10, "k2Axis": 135, "anteriorChamberDepth": 3.05, "lensThickness": 4.55, "whiteToWhite": 11.60, "centralCornealThickness": 550, "targetRefraction": -0.25, "aConstant": 119.2, "posteriorCorneaMode": "nomogram" },
+      "expected": {}
+    },
+    {
+      "id": "TORIC-001",
+      "description": "Regular high astigmatism, toric planning",
+      "input": { "eye": "OD", "mode": "toric", "axialLength": 23.90, "k1": 42.20, "k1Axis": 5, "k2": 45.10, "k2Axis": 95, "anteriorChamberDepth": 3.20, "lensThickness": 4.35, "whiteToWhite": 11.90, "centralCornealThickness": 535, "targetRefraction": -0.25, "aConstant": 119.2, "incisionAxis": 110, "surgicallyInducedAstigmatism": 0.10, "posteriorCorneaMode": "measured" },
+      "expected": {}
+    },
+    {
+      "id": "POST-MYOPIC-LASIK-001",
+      "description": "Post-myopic LASIK/PRK workflow placeholder",
+      "input": { "eye": "OS", "mode": "postRefractive", "axialLength": 26.10, "k1": 38.40, "k1Axis": 12, "k2": 39.00, "k2Axis": 102, "anteriorChamberDepth": 3.65, "lensThickness": 4.05, "whiteToWhite": 12.00, "centralCornealThickness": 480, "targetRefraction": -0.50, "aConstant": 119.2, "posteriorCorneaMode": "measured", "notes": "History: myopic LASIK; fill historical refraction/ablation data in future schema." },
+      "expected": {}
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "iolpro-mobile",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "description": "Mobile-first IOL planning PWA scaffold for ophthalmic surgeons. Research/prototype, not a certified medical device.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test:core": "tsx src/core/formulaSmokeTest.ts"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "typescript": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "latest",
+    "tsx": "latest"
+  },
+  "devDependencies": {}
+}
